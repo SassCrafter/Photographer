@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 50rem;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    color: $white;
+    background: $main-color;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 3;
+    @include transition;
+
+    &:hover {
+        transform: scaleX(1.1);
+    }
+}

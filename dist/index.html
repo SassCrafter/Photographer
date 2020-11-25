@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Twitter card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta property="og:url" content="https://chat-app-fm.netlify.app/">
+   <meta property="og:title" content="Frontend Mentor Chat app challenge">
+   <meta property="og:description" content="Another awesome challege from Frontend Mentor that I really enjoyed building">
+   <meta property="og:image" content="https://photographer.netlify.app/images/twitter-card.png">
+
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Main styles -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Photographer</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="./img/logo-white.svg" alt="Photographer">
+            </a>
+            <div class="mobile-toggler">
+                <div>menu</div>
+                <div>close</div>
+            </div>
+            <nav class="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">works</a>
+                        </li>
+                        <li>
+                            <a href="#">gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">services</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="hero">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-1"></div>
+                <div class="swiper-slide swiper-slide-2"></div>
+                <div class="swiper-slide swiper-slide-3"></div>
+                <div class="swiper-slide swiper-slide-4"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="container hero-content">
+            <h4 class="small-title">david smith</h4>
+            <h1 class="large">Photographer</h1>
+            <img src="./img/separator-white.svg" alt="Logo-2" class="separator">
+            <ul class="list">
+                <li>
+                    <a href="#">landscape</a>
+                </li>
+                <li>
+                    <a href="#">wildlife</a>
+                </li>
+                <li>
+                    <a href="#">street</a>
+                </li>
+                <li>
+                    <a href="#">portrait</a>
+                </li>
+            </ul>
+        </div>    
+    </div>
+
+    <section class="work">
+        <div class="container">
+            <h4 class="section-small-title">featured</h4>
+            <h2 class="section-title">works</h2>
+            <img src="./img/separator-white.svg" alt="" class="separator separator-gray">
+            <div class="work-content grid">
+                <div class="work-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-card-img-container">
+                            <img src="./img/work/work-icon.png" alt="card-hover-icon">
+                            <div class="work-card-img work-card-img-1"></div>
+                        </div>
+                        <div class="work-card-info">
+                            <h5 class="work-card-category landscape">landscape</h5>
+                            <h4 class="work-card-title">Sunrise and Sunset</h4>
+                            <p class="work-card-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                            <div class="work-card-back-text">landscape</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Work card end -->
+                <div class="work-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-card-img-container">
+                            <img src="./img/work/work-icon.png" alt="card-hover-icon">
+                            <div class="work-card-img work-card-img-2"></div>
+                        </div>
+                        <div class="work-card-info">
+                            <h5 class="work-card-category wildlife">wildlife</h5>
+                            <h4 class="work-card-title">Court of Owls</h4>
+                            <p class="work-card-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                            <div class="work-card-back-text">wildlife</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Work card end -->
+                <div class="work-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-card-img-container">
+                            <img src="./img/work/work-icon.png" alt="card-hover-icon">
+                            <div class="work-card-img work-card-img-3"></div>
+                        </div>
+                        <div class="work-card-info">
+                            <h5 class="work-card-category portrait">portrait</h5>
+                            <h4 class="work-card-title">The Power of Personality</h4>
+                            <p class="work-card-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                            <div class="work-card-back-text">portrait</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Work card end -->
+                <div class="work-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-card-img-container">
+                            <img src="./img/work/work-icon.png" alt="card-hover-icon">
+                            <div class="work-card-img work-card-img-4"></div>
+                        </div>
+                        <div class="work-card-info">
+                            <h5 class="work-card-category street">street</h5>
+                            <h4 class="work-card-title">Amazing Azia</h4>
+                            <p class="work-card-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                            <div class="work-card-back-text">street</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Work card end -->
+            </div>
+            <a href="#" class="btn">view all works</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h4 class="section-small-title">professional</h4>
+            <h2 class="section-title">services</h2>
+            <img src="./img/separator-white.svg" alt="" class="separator separator-gray">
+
+            <div class="grid services-content">
+                <div class="service">
+                    <div class="service-color-line"></div>
+                    <div class="service-info">
+                        <div class="service-icon">
+                            <img src="./img/services/service-icon-1.png" alt="">
+                        </div>
+                        <div>
+                            <h6 class="service-title">outdoor photography</h6>
+                            <p class="service-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service End -->
+                <div class="service">
+                    <div class="service-color-line"></div>
+                    <div class="service-info">
+                        <div class="service-icon">
+                            <img src="./img/services/service-icon-2.png" alt="" >
+                        </div>
+                        <div>
+                            <h6 class="service-title">portrait photography</h6>
+                            <p class="service-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service End -->
+                <div class="service">
+                    <div class="service-color-line"></div>
+                    <div class="service-info">
+                        <div class="service-icon">
+                            <img src="./img/services/service-icon-3.png" alt="" >
+                        </div>
+                        <div>
+                            <h6 class="service-title">retouching</h6>
+                            <p class="service-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service End -->
+                <div class="service">
+                    <div class="service-color-line"></div>
+                    <div class="service-info">
+                        <div class="service-icon">
+                            <img src="./img/services/service-icon-4.png" alt=''>
+                        </div>
+                        <div>
+                            <h6 class="service-title">photography classes</h6>
+                            <p class="service-desc">Doc, she’s beautiful. She’s crazy about me. Look at this, look what she wrote me, Doc. That says it all. Doc, you’re my only hope.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service End -->
+            </div>
+            <a href="#" class="btn">contact me</a>
+        </div>
+    </section>
+
+    
+    <script src="./js/app.js"></script>
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+</html>

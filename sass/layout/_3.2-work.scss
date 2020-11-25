@@ -1,0 +1,141 @@
+.work {
+    &-content {
+        margin: 3rem 0;
+    }
+
+    &-card {
+        overflow: hidden;
+        box-shadow: 0 .1rem .2rem rgba(0,0,0, .12);
+        &-link {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            @include set-bg-color($white);
+
+            &:hover {
+                .work-card-img-container {
+                    img {
+                        opacity: 1;
+                    }
+                }
+                .work-card-img {
+                    transform: scale3d(1,1,1);
+                    opacity: .65;
+                }
+            }
+            
+        }
+
+        &-img-container {
+            display: block;
+            width: 100%;
+            background: $black;
+            position: relative;
+            overflow: hidden;
+            transition: transform $t-time $t-timing, filter $t-time linear;
+
+            img {
+                width: 4.8rem;
+                height: 4.8rem;
+                @include absolute;
+                opacity: 0;
+                @include transition(opacity, $t-time, linear);
+                z-index: 3;
+            }
+        }
+
+        &-img {
+            height: 21.6rem;
+            transform: scale3d(1.08, 1.08, 1);
+            opacity: 1;
+            transition: transform $t-time $t-timing, opacity $t-time linear;
+
+            &-1 {
+                @include set-bg-img('../img/work/work-1.jpg')
+            }
+            &-2 {
+                @include set-bg-img('../img/work/work-2.jpg')
+            }
+            &-3 {
+                @include set-bg-img('../img/work/work-3.jpg')
+            }
+            &-4 {
+                @include set-bg-img('../img/work/work-4.jpg')
+            }
+        }
+
+        &-info {
+            text-align: left;
+            padding: 2rem;
+            position: relative;
+        }
+
+        &-category {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+
+            &.landscape {
+                color: orange;
+            }
+            &.wildlife {
+                color: $bondi-blue;
+            }
+            &.portrait {
+                color: $santa-fe;
+            }
+            &.street {
+                color: $main-color;
+            }
+        }
+        
+        &-title {
+            font-size: 2rem;
+            letter-spacing: .2rem;
+        }
+
+        &-desc {
+            font-size: 1.3rem;
+            color: #777777;
+        }
+
+
+        &-back-text {
+            font-size: 6.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $pale-black;
+            @include absolute(-1rem, 43%);
+        }
+    }
+
+    @include media('pc') {
+        &-card {
+
+            &-img {
+                height: 40rem;
+            }
+
+            &-info {
+                padding: 5rem;
+            }
+
+            &-category {
+                font-size: 1.8rem;
+                font-weight: 400;
+                letter-spacing: .5rem;
+                margin-bottom: 2rem;
+            }
+            &-title {
+                font-size: 2.5rem;
+            }
+            &-desc {
+                font-size: 1.6rem;
+            }
+            &-back-text {
+                font-size: 12rem;
+                top: -10%;
+            }
+        }
+    }
+}
