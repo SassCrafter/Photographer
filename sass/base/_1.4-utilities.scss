@@ -4,6 +4,16 @@
     padding: 0 2rem;
 }
 
+.logo {
+    img {
+        width: 13rem;
+    }
+
+    &-black {
+        filter: invert(1);
+    }
+}
+
 .separator {
     width: 12rem;
     margin-bottom: 3rem;

@@ -1,0 +1,79 @@
+.call-to-action {
+    padding-bottom: 0 !important;
+}
+
+.action {
+
+    &-content {
+        @include flex(column);
+    }
+    &-block {
+        width: 100%;
+        @include flex(column);
+        min-height: 22rem;
+        padding-top: 3rem;
+
+        &-left {
+            background: $main-color;
+            color: $white;
+        }
+        &-right {
+            background: #354559;
+            color: $white;
+        }
+
+        &:hover {
+            .action-icon {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &-small-title {
+        color: hsla(0, 0%, 100%, 0.7);
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    &-title {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        margin-bottom: 3rem;
+    }
+
+    &-icon {
+        opacity: 0;
+        transform: translateY(2rem);
+        transition: transform $t-time $t-timing, opacity $t-time linear;
+    }
+
+    @include media('tablet') {
+        &-content {
+            flex-direction: row;
+        }
+        &-block {
+            width: 50%;
+            padding: 5rem 0 3rem;
+        }
+        &-small-title {
+            font-size: 1.4rem;
+        }
+        &-title {
+            font-size: 2rem;
+        }
+    }
+    @include media('pc') {
+        &-block {
+            padding: 8rem 0 4rem;
+        }
+        &-small-title {
+            font-size: 1.6rem;
+        }
+        &-title {
+            font-size: 2.2rem;
+        }
+    }
+
+}

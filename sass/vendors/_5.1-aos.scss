@@ -1,0 +1,20 @@
+[data-aos="fade-zoom"] {
+    opacity: 0;
+    transform: translateY(15rem) scale(.7);
+    transition-property: transform, opacity;
+    
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+[data-aos="fade-zoom-absolute"] {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.7);
+    transition-property: transform, opacity;
+    
+    &.aos-animate {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

@@ -1,0 +1,147 @@
+.side-section {
+  padding: 0 !important;
+  width: 100%;
+  @include flex(column, center, flex-start);
+  position: relative;
+}
+
+.side {
+  &-img {
+    width: 100%;
+    height: 22.4rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      );
+      @include absolute(0, 0);
+    }
+  }
+
+  &-title {
+    font-size: 2.7rem;
+    letter-spacing: 0.5rem;
+    color: $white;
+    text-transform: uppercase;
+    @include absolute;
+    z-index: 3;
+
+    &::before {
+      content: "";
+      width: 0;
+      height: 0.3rem;
+      background: $white;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 4;
+    }
+  }
+
+  &-content-wrapper {
+    text-align: left;
+    @include set-bg-color($bondi-blue);
+    padding: 3rem 3rem 8rem 3rem;
+
+    h4,
+    h5,
+    h6 {
+      font-size: 2rem;
+      margin-bottom: 1.6rem;
+    }
+    h5 {
+      font-size: 1.8rem;
+    }
+    h6 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1.6rem;
+    }
+
+    ul {
+      list-style: disc;
+      margin-bottom: 1.6rem;
+
+      li {
+        margin-left: 4rem;
+        font-size: 1.7rem;
+        font-weight: bold;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 0;
+      right: 1.6rem;
+    }
+  }
+}
+
+@include media("tablet") {
+  .side-section {
+    flex-direction: row;
+  }
+
+  .side {
+    &-img {
+      width: 30%;
+      height: 100vh;
+    }
+
+    &-title {
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      padding-bottom: 2rem;
+      top: 15%;
+      left: auto;
+      right: -25%;
+      transform: translate(0, 0);
+
+      &::before {
+        width: 70%;
+        right: 5%;
+      }
+    }
+
+    &-content-wrapper {
+      width: 70vw;
+      height: 100vh;
+      padding-top: 15%;
+      overflow-y: scroll;
+
+      h4 {
+        font-size: 3.6rem;
+      }
+
+      h5 {
+        font-size: 2.4rem;
+      }
+      h6 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.7rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    &-content-text {
+      height: auto;
+      padding-top: 8rem;
+      padding-left: 5rem;
+    }
+  }
+}

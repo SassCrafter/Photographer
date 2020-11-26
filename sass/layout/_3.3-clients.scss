@@ -1,0 +1,35 @@
+.clients-content {
+    max-width: 62rem;
+    margin: 3rem auto;
+    @include flex;
+    flex-wrap: wrap;
+    @include media('pc') {
+        max-width: 70rem;
+    }
+} 
+
+.client {
+    &-box {
+        @include flex;
+        width: 50%;
+        height: 12rem;
+        box-shadow: 0 0 0 1px #eaeaea;
+
+        &-img {
+            width: 50%;
+            @include transition;
+        }
+
+        &:hover {
+            .client-box-img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    @include media('tablet') {
+        &-box {
+            width: 33.3%;
+        }
+    }
+}

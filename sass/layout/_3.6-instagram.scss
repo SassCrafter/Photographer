@@ -1,0 +1,107 @@
+.instagram {
+    padding: 0 !important;
+    @include flex(column);
+    background: #000;
+    position: relative;
+    overflow: hidden;
+
+
+    &-card {
+        @include flex(column);
+        @include set-bg-color($white);
+        @include absolute;
+        @include transition;
+        width: 19rem;
+        height: 19rem;
+        opacity: 1;
+
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+
+            
+        }
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        &-text {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            strong {
+                display: block;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &-photo {
+        min-height: 12.8rem;
+        min-width: 12.8rem;
+        opacity: 1;
+        @include transition(opacity, $t-time, linear);
+
+        &-block {
+            @include flex;
+        }
+        &-line {
+            @include flex;
+        }
+    }
+
+    .photo {
+        &-1 {
+            @include set-bg-img('../img/instagram/instagram-1.jpg');
+        }
+        &-2 {
+            @include set-bg-img('../img/instagram/instagram-1.jpg');
+        }
+        &-3 {
+            @include set-bg-img('../img/instagram/instagram-2.jpg');
+        }
+        &-4 {
+            @include set-bg-img('../img/instagram/instagram-3.jpg');
+        }
+        &-5 {
+            @include set-bg-img('../img/instagram/instagram-4.jpg');
+        }
+        &-6 {
+            @include set-bg-img('../img/instagram/instagram-5.jpg');
+        }
+        &-7 {
+            @include set-bg-img('../img/instagram/instagram-6.jpg');
+        }
+        &-7 {
+            @include set-bg-img('../img/instagram/instagram-7.jpg');
+        }
+        &-8 {
+            @include set-bg-img('../img/instagram/instagram-8.jpg');
+        }
+        &-9 {
+            @include set-bg-img('../img/instagram/instagram-9.jpg');
+        }
+        &-10 {
+            @include set-bg-img('../img/instagram/instagram-10.jpg');
+        }
+        &-11 {
+            @include set-bg-img('../img/instagram/instagram-11.jpg');
+        }
+        &-12 {
+            @include set-bg-img('../img/instagram/instagram-12.jpg');
+        }
+        &-13 {
+            @include set-bg-img('../img/instagram/instagram-13.jpg');
+        }
+        &-14 {
+            @include set-bg-img('../img/instagram/instagram-14.jpg');
+        }
+        &-15 {
+            @include set-bg-img('../img/instagram/instagram-15.jpg');
+        }
+        &-16 {
+            @include set-bg-img('../img/instagram/instagram-16.jpg');
+        }
+    }
+}

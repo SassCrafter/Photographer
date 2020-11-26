@@ -42,16 +42,20 @@ ul {
         &::before {
             content: '';
             width: 0;
-            height: 1px;
+            height: .2rem;
             background: $white;
-            position: absolute;
+            opacity: 1;
+            @include absolute(auto, 0);
             bottom: 0;
-            left: 0;
             @include transition(width, $t-time, linear);
         }
 
-        &:hover::before {
-            width: 100%;
+        &:hover {
+            color: $white;
+
+            &::before {
+                width: 100%;
+            }
         }
     }
 }

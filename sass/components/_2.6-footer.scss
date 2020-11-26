@@ -1,0 +1,33 @@
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+
+    &-list {
+        margin: 1rem 0 2rem 0;
+        @include flex(column);
+
+    }
+
+    @include media('tablet') {
+        padding: 4rem 0;
+        &-list {
+            flex-direction: row;
+
+            li:not(:last-child) {
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+
+            a:hover {
+                color: $main-color;
+
+                &::before {
+                    height: .4rem;
+                    background: $main-color;
+                    opacity: .4;
+                    top: 60%;
+                }
+            }
+        }
+    }
+}

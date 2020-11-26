@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+let swiperHero = new Swiper('.swiper-hero', {
     loop: true,
     effect: 'fade',
     autoplay: {
@@ -9,4 +9,14 @@ var swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
     }
+  });
+
+  let testimonialSwiper = new Swiper('.testimonials-swiper', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
   });

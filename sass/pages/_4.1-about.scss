@@ -1,0 +1,7 @@
+.about {
+
+    &-side-img {
+        @include set-bg-img('../img/about/David Smith.jpg');
+        background-position: center 7%;
+    }
+}

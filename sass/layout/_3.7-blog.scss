@@ -1,0 +1,17 @@
+.blog-card {
+    &-img {
+        &-1 {
+            @include set-bg-img('../img/posts/post-1.jpg');
+        }
+        &-2 {
+            @include set-bg-img('../img/posts/post-2.jpg');
+        }
+        &-3 {
+            @include set-bg-img('../img/posts/post-3.jpg');
+        }
+    }
+
+    .card-title {
+        font-weight: 400;
+    }
+}

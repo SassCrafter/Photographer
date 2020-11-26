@@ -4,7 +4,7 @@
     border: none;
     padding: 1.5rem 2rem;
     border-radius: 50rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: .2rem;
     text-transform: capitalize;
     color: $white;
@@ -16,5 +16,9 @@
 
     &:hover {
         transform: scaleX(1.1);
+    }
+
+    &-white {
+        @include set-bg-color($white);
     }
 }

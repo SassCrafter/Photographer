@@ -1,0 +1,70 @@
+.subscribe {
+    &-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        max-width: 56rem;
+        margin: 0 auto 3rem auto;
+    }
+
+    &-form {
+        max-width: 77rem;
+        margin: 0 auto;
+        padding: 3rem;
+        border-radius: .5rem;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: .3rem;
+            background: $orange;
+            @include absolute(0,0);
+        }
+
+        input {
+            display: inline-block;
+            padding: 1.5rem;
+            width: 100%;
+            margin-bottom: 2rem;
+            border: none;
+            border-bottom: 2px solid lighten($gray, 20%);
+            background: transparent;
+            text-align: center;
+            font-size: 1.6rem;
+            @include transition(border-color, $t-time, linear);
+
+            &:hover,
+            &:focus {
+                border-color: $orange;
+                outline: none;
+            }
+
+            &::placeholder {
+                color: $gray;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    @include media('tablet') {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+        &-title {
+            font-size: 2.4rem;
+        }
+
+        &-form {
+            padding: 5rem 3rem;
+            input {
+                width: 60%;
+                margin-right: 2rem;
+                margin-bottom: 0;
+                text-align: left;   
+            }
+        }
+    }
+
+    
+}

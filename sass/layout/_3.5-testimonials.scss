@@ -1,0 +1,76 @@
+.testimonials {
+    &-img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+    }
+
+    &-text {
+        max-width: 40rem;
+        font-size: 1.4rem;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+        color: $gray;
+        text-transform: capitalize;
+    }
+
+    .swiper-container {
+        max-width: 85rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 20%;
+        outline: none;
+
+        &:hover::after {
+            transform: scale(1.1);
+        }
+        
+        &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-top-width: 12px;
+            border-bottom-width: 12px;
+            border-right: 12px solid $main-color;
+            @include transition;
+        }
+    }
+
+    .swiper-button-next::after {
+        border-right: 0;
+        border-left: 12px solid $main-color;
+    }
+
+    @include media('tablet') {
+        .swiper-container {
+            width: 80%;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 50%;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+        }
+    }
+
+    @include media('pc') {
+        &-img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        &-text {
+            max-width: 57rem;
+            font-size: 2.2rem;
+        }
+    }
+}
