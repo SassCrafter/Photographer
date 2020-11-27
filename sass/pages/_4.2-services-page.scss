@@ -1,0 +1,14 @@
+.services-page {
+    .side-content-wrapper {
+        @include set-bg-color(#354559);
+    }
+    .side-big-text {
+        right: -20%;
+    }
+}
+
+
+.services-side-img {
+    @include set-bg-img('../img/services/services-page-bg.jpg');
+    background-position: 25% 7%;
+}

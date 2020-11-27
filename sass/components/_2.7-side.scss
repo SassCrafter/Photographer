@@ -45,9 +45,11 @@
   }
 
   &-content-wrapper {
+    width: 100%;
+    min-height: calc(100vh - 22.4rem);
     text-align: left;
     @include set-bg-color($bondi-blue);
-    padding: 3rem 3rem 8rem 3rem;
+    padding: 6rem 3rem;
 
     h4,
     h5,
@@ -81,11 +83,25 @@
       }
     }
 
-    .btn {
-      position: absolute;
-      bottom: 0;
-      right: 1.6rem;
-    }
+  }
+
+  &-content-text {
+    max-width: 50rem;
+    position: relative;
+    z-index: 3;
+  }
+
+  &-big-text {
+    font-size: 23rem;
+    color: hsla(0, 0%, 100%, 0.09);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    position: fixed;
+    top: 50%;
+    right: -5rem;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: none;
   }
 }
 
@@ -96,7 +112,7 @@
 
   .side {
     &-img {
-      width: 30%;
+      width: 40%;
       height: 100vh;
     }
 
@@ -116,9 +132,10 @@
     }
 
     &-content-wrapper {
-      width: 70vw;
+      //width: 70%;
       height: 100vh;
       padding-top: 15%;
+      padding-left: 10rem;
       overflow-y: scroll;
 
       h4 {
@@ -140,8 +157,62 @@
 
     &-content-text {
       height: auto;
-      padding-top: 8rem;
-      padding-left: 5rem;
+      padding: 8rem 2rem 0 2rem;
+      
     }
   }
+@include media("pc") {
+
+  .side {
+
+    &-img {
+      width: 40%;
+    }
+
+    &-title {
+      font-size: 6rem;
+      letter-spacing: 1rem;
+      padding-bottom: 5rem;
+      top: 25%;
+      left: auto;
+      right: -20%;
+      transform: translate(0, 0);
+
+      &::before {
+        width: 70%;
+        right: 5%;
+      }
+    }
+
+    &-content-wrapper {
+      width: 60%;
+      padding-left: 20rem;
+
+      h4 {
+        font-size: 4.6rem;
+      }
+
+      h5 {
+        font-size: 3.4rem;
+      }
+      h6 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2.3rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    &-content-text {
+      height: auto;
+      padding-top: 2rem;
+    }
+
+    &-big-text {
+      display: block;
+    }
+  }
+}
 }

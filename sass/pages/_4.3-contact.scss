@@ -1,0 +1,14 @@
+.contact {
+    &-side-img {
+        @include set-bg-img('../img/contact-bg.jpg');
+        background-position: right center;
+    }
+
+    .side-content-wrapper {
+        @include set-bg-color(#b06a51);
+    }
+
+    .side-big-text {
+        right: -20%;
+    }
+}

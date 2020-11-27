@@ -26,24 +26,29 @@
                 </div>
             </div>
             <nav class="nav">
+                <div class="nav-overlay nav-overlay-home" data-overlay="home"></div>
+                <div class="nav-overlay nav-overlay-about active active-1" data-overlay="about"></div>
+                <div class="nav-overlay nav-overlay-services" data-overlay="services"></div>
+                <div class="nav-overlay nav-overlay-contact" data-overlay="contact"></div>
                     <ul class="nav-list">
                         <li>
-                            <a href="index.html" >home</a>
+                            <a href="index.html" data-overlay="home">home</a>
                         </li>
+                        <!--
                         <li>
                             <a href="#">works</a>
                         </li>
                         <li>
                             <a href="#">gallery</a>
+                        </li> -->
+                        <li>
+                            <a href="services.html" data-overlay="services">services</a>
                         </li>
                         <li>
-                            <a href="#">services</a>
+                            <a href="about.html" class="active link-active" data-overlay="about">about</a>
                         </li>
                         <li>
-                            <a href="about.html" class="active">about</a>
-                        </li>
-                        <li>
-                            <a href="#">contact</a>
+                            <a href="contact.html" data-overlay="contact">contact</a>
                         </li>
                     </ul>
             </nav>
@@ -98,6 +103,7 @@
                         <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create conten</p>
                         
                     </div>
+                    <div class="side-big-text">about</div>
                 </div>
             </div>
     </section>

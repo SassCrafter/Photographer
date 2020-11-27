@@ -21,4 +21,8 @@
     &-white {
         @include set-bg-color($white);
     }
+    &-orange {
+        background: $orange;
+        color: $white;
+    }
 }
